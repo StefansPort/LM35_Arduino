@@ -10,6 +10,13 @@ const int Zeitvorgabe = 1000;   // Zeitvorgabe bis zur erneuten Herausgabe von D
 void setup() 
 {
 Serial.begin(9600);             // Start serielle Kommunikation
+
+Serial.println("************************"); // *******************************
+Serial.println("****Arduino is ready****"); // Ausgabe auf dem seriellen Monitor vor dem Loop, um zu überprüfen, ob die serielle Kommunikation funktioniert
+Serial.print("**Check every ");             // 
+Serial.print(Zeitvorgabe);                  // Wiedergabe der definierten Zeitvorgabe auf dem seriellen Monitor
+Serial.println(" ms**");                    // 
+Serial.println("************************"); // ******************************* 
 }
 
 void loop()                     // Start des Loop

@@ -4,8 +4,8 @@
 float LM35Sensor=A5;            // LM35 an A5 angeschlossen
 float sensormesswert;           // Variable für den Messwert des Sensors
 int temperatur;                 // Variable für die spätere Umrechnung zur Temperatur
-unsigned int Abfrage;           // Variable für die spätere Prüfung "Ist der Zeitpunkt zur nächsten Messung erreicht?", unsigned = nur Positivzahlen
-const int Zeitvorgabe = 1000;   // Zeitvorgabe bis zur erneuten Herausgabe von Daten in Millisekunden, const = Read-only
+unsigned long Abfrage;           // Variable für die spätere Prüfung "Ist der Zeitpunkt zur nächsten Messung erreicht?", unsigned = nur Positivzahlen
+const long Zeitvorgabe = 1000;   // Zeitvorgabe bis zur erneuten Herausgabe von Daten in Millisekunden, const = Read-only
 
 void setup() 
 {
